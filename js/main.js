@@ -177,12 +177,6 @@
 //
 //
 
-
-$(document).ready(function () {
-  $("#submitForm").click(function (e) {
-    e.preventDefault();
-
-
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("submitForm").addEventListener("click", function (event) {
     event.preventDefault();
@@ -205,12 +199,28 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    alert("Formulario completo. Listo para enviar.");
+    // Enviar con FormSubmit sin redirigir
+    fetch("https://formsubmit.co/ajax/maxihschuster@gmail.COM", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify(campos)
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        alert("¡Formulario enviado con éxito!");
+        document.getElementById("miFormulario").reset();
+      })
+      .catch(error => {
+        console.error(error);
+        alert("Ocurrió un error al enviar el formulario.");
+      });
   });
 });
 
-  });
-});
 
 
 //
