@@ -30,14 +30,14 @@
     console.log("campos revisados..."); // 💡 Esto debería aparecer en consola
 
     // Envío con FormData (reemplazado por JSON)
-    fetch("https://script.google.com/macros/s/AKfycbw7_o2mLZQRnwC81AhKDakBMlzpSfC2t17AFfgOaGny5LFYFK_5J3MbPlZ1Zyd-VPYj6g/exec", {
-      method: "POST",
-      cors: {
-origin: ["https://maxihschuster.github.io/’"],
-methods: "GET,HEAD,PUT,PATCH,DELETE",
-},
-      body: formData  // Usamos FormData en lugar de JSON
-    })
+    fetch("/.netlify/functions/proxy", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(campos)
+})
+
     
       .then(response => response.json())
       .then(data => {
