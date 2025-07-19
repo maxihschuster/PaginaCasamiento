@@ -17,6 +17,7 @@
       asistencia: document.getElementById("asistencia").value.trim(),
       comida: document.getElementById("comida").value.trim()
     };
+      console.log("campos cargados..."); // 💡 Esto debería aparecer en consola
 
     // Validación de campos vacíos
     for (let key in campos) {
@@ -25,6 +26,8 @@
         return;
       }
     }
+          console.log("campos revisados..."); // 💡 Esto debería aparecer en consola
+
 
     // Envío con FormSubmit (reemplazá por tu correo real)
     fetch("https://script.google.com/macros/s/AKfycbw7_o2mLZQRnwC81AhKDakBMlzpSfC2t17AFfgOaGny5LFYFK_5J3MbPlZ1Zyd-VPYj6g/exec", {
