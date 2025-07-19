@@ -1,3 +1,4 @@
+;(function () {
 
     document.addEventListener("DOMContentLoaded", function () {
   const formulario = document.getElementById("miFormulario");
@@ -47,3 +48,5 @@
 });
 
 
+
+}());
