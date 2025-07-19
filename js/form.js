@@ -27,11 +27,10 @@
     }
 
     // Envío con FormSubmit (reemplazá por tu correo real)
-    fetch("https://script.google.com/macros/s/AKfycbxRZhY8zSWaIhfnEpak9U7h990KRqc7Jp-MCvUD_OtXawhIZhAsChkTRRu_w6ntspFM5A/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbw7_o2mLZQRnwC81AhKDakBMlzpSfC2t17AFfgOaGny5LFYFK_5J3MbPlZ1Zyd-VPYj6g/exec", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
+        "Content-Type": "application/json"
       },
       body: JSON.stringify(campos)
     })
