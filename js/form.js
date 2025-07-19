@@ -36,12 +36,11 @@
       },
       body: JSON.stringify(campos)
     })
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
+      .then(text => {
+        console.log("Respuesta:", text);
         alert("¡Formulario enviado con éxito!");
         formulario.reset();
-      })
+        })
       .catch(error => {
         console.error(error);
         alert("Ocurrió un error al enviar el formulario.");
