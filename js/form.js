@@ -30,7 +30,7 @@
 
 
     // Envío con FormSubmit (reemplazá por tu correo real)
-    fetch("https://script.google.com/macros/s/AKfycbw7_o2mLZQRnwC81AhKDakBMlzpSfC2t17AFfgOaGny5LFYFK_5J3MbPlZ1Zyd-VPYj6g/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbzzWYMIND9J-LA2ohQeOQkL7MkqRIKTHh98a4ktx1lde01KlC6wCo50dQtRQFTWkyrGSw/exec", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
