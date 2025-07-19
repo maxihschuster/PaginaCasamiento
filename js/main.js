@@ -171,16 +171,53 @@
 	}
 	}, 1000);
 
-
-  function updateSelection(selectElement) {
-    const selectedOption = selectElement.options[selectElement.selectedIndex].text;
-    console.log("Opción seleccionada:", selectedOption);
-  }
-
-
+//
+//
+//
+//
+//
 
 
+$(document).ready(function () {
+  $("#submitForm").click(function (e) {
+    e.preventDefault();
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("submitForm").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const campos = {
+      nombre: document.getElementById("nombre").value.trim(),
+      apellido: document.getElementById("apellido").value.trim(),
+      email: document.getElementById("email").value.trim(),
+      fechaNac: document.getElementById("fechaNac").value.trim(),
+      telefono: document.getElementById("telefono").value.trim(),
+      dni: document.getElementById("dni").value.trim(),
+      asistencia: document.getElementById("asistencia").value.trim(),
+      comida: document.getElementById("comida").value.trim()
+    };
+
+    for (let key in campos) {
+      if (campos[key] === "" || campos[key] === "-") {
+        alert("Por favor, completá todos los campos.");
+        return;
+      }
+    }
+
+    alert("Formulario completo. Listo para enviar.");
+  });
+});
+
+  });
+});
+
+
+//
+//
+//
+//
+//
 
 
 	// Document on load.
