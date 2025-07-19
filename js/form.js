@@ -32,8 +32,13 @@
     // Envío con FormData (reemplazado por JSON)
     fetch("https://script.google.com/macros/s/AKfycbw7_o2mLZQRnwC81AhKDakBMlzpSfC2t17AFfgOaGny5LFYFK_5J3MbPlZ1Zyd-VPYj6g/exec", {
       method: "POST",
+      cors: {
+origin: ["https://maxihschuster.github.io/’"],
+methods: "GET,HEAD,PUT,PATCH,DELETE",
+},
       body: formData  // Usamos FormData en lugar de JSON
     })
+    
       .then(response => response.json())
       .then(data => {
         console.log(data);
