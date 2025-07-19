@@ -180,7 +180,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const formulario = document.getElementById("miFormulario");
 
-  formulario.addEventListener("submitForm", function (event) {
+  formulario.addEventListener("submit", function (event) {
     event.preventDefault(); // Evita que se recargue la página
 
     const campos = {
