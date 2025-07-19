@@ -5,6 +5,8 @@
 
   formulario.addEventListener("submit", function (event) {
     event.preventDefault(); // Evita que se recargue la página
+      console.log("Enviando..."); // 💡 Esto debería aparecer en consola
+
 
     const campos = {
       nombre: document.getElementById("nombre").value.trim(),
