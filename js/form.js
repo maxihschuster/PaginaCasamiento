@@ -1,6 +1,5 @@
 ;(function () {
 
-    document.addEventListener("DOMContentLoaded", function () {
   const formulario = document.getElementById("miFormulario");
 
   formulario.addEventListener("submit", function (event) {
@@ -47,7 +46,6 @@
         alert("Ocurrió un error al enviar el formulario.");
       });
   });
-});
 
 
 
