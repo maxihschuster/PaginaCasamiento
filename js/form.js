@@ -20,22 +20,23 @@
       console.log("campos cargados..."); // 💡 Esto debería aparecer en consola
 
     // Validación de campos vacíos
-    for (let key in campos) {
-      if (campos[key] === "" || campos[key] === "-") {
-        alert("Por favor, completá todos los campos.");
-        return;
-      }
-    }
+
+
+
+const formData = new FormData();
+for (let key in campos) {
+  formData.append(key, campos[key]);
+}
+
           console.log("campos revisados..."); // 💡 Esto debería aparecer en consola
 
 
     // Envío con FormSubmit (reemplazá por tu correo real)
     fetch("https://script.google.com/macros/s/AKfycbzzWYMIND9J-LA2ohQeOQkL7MkqRIKTHh98a4ktx1lde01KlC6wCo50dQtRQFTWkyrGSw/exec", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(campos)
+      //headers: {        "Content-Type": "application/json"      },
+      //body: JSON.stringify(campos)
+      body: FormData
     })
       .then(response => response.json())
       .then(data => {
