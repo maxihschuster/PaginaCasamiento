@@ -178,8 +178,10 @@
 //
 
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("submitForm").addEventListener("click", function (event) {
-    event.preventDefault();
+  const formulario = document.getElementById("miFormulario");
+
+  formulario.addEventListener("submit", function (event) {
+    event.preventDefault(); // Evita que se recargue la página
 
     const campos = {
       nombre: document.getElementById("nombre").value.trim(),
@@ -192,6 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
       comida: document.getElementById("comida").value.trim()
     };
 
+    // Validación de campos vacíos
     for (let key in campos) {
       if (campos[key] === "" || campos[key] === "-") {
         alert("Por favor, completá todos los campos.");
@@ -199,8 +202,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    // Enviar con FormSubmit sin redirigir
-    fetch("https://formsubmit.co/ajax/maxihschuster@gmail.COM", {
+    // Envío con FormSubmit (reemplazá por tu correo real)
+    fetch("https://formsubmit.co/ajax/TUCORREO@EJEMPLO.COM", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -212,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(data => {
         console.log(data);
         alert("¡Formulario enviado con éxito!");
-        document.getElementById("miFormulario").reset();
+        formulario.reset();
       })
       .catch(error => {
         console.error(error);
@@ -220,6 +223,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
 
 
 
