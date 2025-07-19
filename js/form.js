@@ -27,7 +27,7 @@
     }
 
     // Envío con FormSubmit (reemplazá por tu correo real)
-    fetch("https://formsubmit.co/ajax/maxihschuster@gmail.COM", {
+    fetch("https://script.google.com/macros/s/AKfycbxRZhY8zSWaIhfnEpak9U7h990KRqc7Jp-MCvUD_OtXawhIZhAsChkTRRu_w6ntspFM5A/exec", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
