@@ -894,7 +894,7 @@ $(document).ready(function() {
 
 
 		// function form
-
+/*
 		document.getElementById("submitForm").addEventListener("click", function () {
 			let datos = {
 				nombre: document.getElementById("nombre").value,
@@ -919,7 +919,7 @@ $(document).ready(function() {
 		});
 		
 
-
+*/
 
 
 
