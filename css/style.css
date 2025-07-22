@@ -148,7 +148,7 @@ figure {
 .fh5co-cover,
 .fh5co-hero {
   position: relative;
-  height: 800px;
+  height: 500px;
   width: 100%;
 }
 
@@ -187,7 +187,7 @@ figure {
 
 .fh5co-cover .display-t {
   display: table;
-  height: 800px;
+  height: 100%;
   width: 100%;
   position: relative;
   z-index: 2;
