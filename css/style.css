@@ -384,7 +384,7 @@ figure {
 #fh5co-logo a:hover, #fh5co-logo a:focus {
   color: #F69D9D !important;
 }
-
+/*   menu hamburugesa ?
 #fh5co-menu-wrap {
   position: relative;
   z-index: 2;
@@ -395,7 +395,21 @@ figure {
 
 #fh5co-menu-wrap .sf-menu a {
   padding: 1em .75em;
-}
+}*/
+
+  #fh5co-menu-wrap .sf-menu {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  #fh5co-menu-wrap .sf-menu li {
+    margin: 0 10px;
+    list-style: none;
+  }
 
 #fh5co-primary-menu > li > ul li.active > a {
   color: #F69D9D !important;
@@ -1097,7 +1111,13 @@ select.form-control {
 
 @media screen and (max-width: 768px) {
   #fh5co-menu-wrap {
-    display: none;
+    display: flex !important;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    float: none;
+
   }
 }
 
