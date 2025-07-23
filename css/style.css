@@ -17,7 +17,7 @@ body {
   line-height: 1.6;
   font-size: 16px;
   background: #fff;
-  color: #848484;
+  color: #F69D9D;
   font-weight: 300;
   overflow-x: hidden;
 }
@@ -110,6 +110,25 @@ figure {
   .header-top .fh5co-link {
     text-align: center;
   }
+
+
+  #fh5co-header-section {
+    padding: 5px 0 !important ;
+  }
+
+  .nav-header {
+    padding: 0;
+    margin: 0;
+  }
+
+ 
+
+  #fh5co-menu-wrap {
+    margin-top: 5px;
+  }
+
+
+
 }
 
 .header-top .fh5co-social a {
@@ -240,7 +259,7 @@ figure {
 
 /* Superfish Override Menu */
 .sf-menu {
-  margin: 16px 0 0 0 !important;
+  margin: 10px 0 0 0 !important;
 }
 
 .sf-menu {
@@ -363,7 +382,7 @@ figure {
   position: relative;
   z-index: 2;
   font-size: 30px;
-  margin-top: 35px;
+  margin-top: 20px;
   font-weight: 700;
   float: left;
 }
@@ -377,6 +396,7 @@ figure {
     width: 100%;
     float: none;
     text-align: center;
+    margin: 5px 0;
   }
 }
 
@@ -385,7 +405,7 @@ figure {
 }
 
 #fh5co-logo a:hover, #fh5co-logo a:focus {
-  color: #F69D9D !important;
+  color: #ffffff !important;
 }
 /*   menu hamburugesa ?
 #fh5co-menu-wrap {
@@ -411,7 +431,7 @@ figure {
   }
 
   #fh5co-menu-wrap .sf-menu li {
-    margin: 0 10px;
+    margin: 0 auto;
     align-items: center;
     list-style: none;
     
@@ -1110,7 +1130,7 @@ select.form-control {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: 10px;
+    margin-top: 0px;
     flex-wrap: wrap;
     float: none;
     
@@ -1398,9 +1418,4 @@ select.form-control {
   .modal-dialog.modal-sm {
     max-width: 550px;
     width: 90%;
-  }
-
-  .modal-body p {
-    word-wrap: break-word;
-    word-break: break-all;
   }
