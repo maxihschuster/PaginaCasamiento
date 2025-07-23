@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #5a5a5a;
   font-family: "Montez", cursive;
   font-weight: 400;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
 }
 
 figure {
@@ -166,15 +166,15 @@ figure {
 
 .fh5co-cover,
 .fh5co-hero {
-  position: relative;
-  height: 500px;
+  position: relative;  
+  height: 450px;
   width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .fh5co-cover,
   .fh5co-hero {
-    height: 400px;
+    height: 350px;
   }
 }
 
@@ -1414,8 +1414,47 @@ select.form-control {
   background: url(../images/hourglass.svg) center no-repeat #222222;
 }
 
+
+
+
+
+
 /* Personalización del modal */
   .modal-dialog.modal-sm {
     max-width: 550px;
     width: 90%;
   }
+
+.fh5co-cover {
+  position: relative;
+  padding: 0px 0; /* espacio arriba y abajo */
+  background-size: cover;
+  background-position: center center;
+}
+
+.display-t {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 400px; /* o lo que necesites */
+}
+
+.display-tc {
+  width: 100%;
+}
+
+.fechas-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  .fechas-desktop {
+    display: none;
+  }
+  .fechas-mobile {
+    display: inline;
+  }
+}
+
+  
