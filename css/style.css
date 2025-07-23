@@ -240,7 +240,7 @@ figure {
 
 /* Superfish Override Menu */
 .sf-menu {
-  margin: 7px 0 0 0 !important;
+  margin: 16px 0 0 0 !important;
 }
 
 .sf-menu {
@@ -262,8 +262,8 @@ figure {
   border-top: none;
   border-top: none;
   text-decoration: none;
-  zoom: 1;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 17px;
   border-bottom: none !important;
 }
 
@@ -350,7 +350,7 @@ figure {
   left: 0;
   width: 100%;
   z-index: 1022;
-  background: #f1f1f1;
+  background: #F69D9D;
 }
 
 .nav-header {
@@ -381,7 +381,7 @@ figure {
 }
 
 #fh5co-logo a {
-  color: #F69D9D;
+  color: #f1f1f1;
 }
 
 #fh5co-logo a:hover, #fh5co-logo a:focus {
@@ -407,11 +407,14 @@ figure {
     align-items: center;
     padding: 0;
     margin: 0;
+    
   }
 
   #fh5co-menu-wrap .sf-menu li {
     margin: 0 10px;
+    align-items: center;
     list-style: none;
+    
   }
 
 #fh5co-primary-menu > li > ul li.active > a {
@@ -1105,10 +1108,13 @@ select.form-control {
   #fh5co-menu-wrap {
     display: flex !important;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     margin-top: 10px;
     flex-wrap: wrap;
     float: none;
+    
+
 
   }
 }
@@ -1387,3 +1393,14 @@ select.form-control {
   z-index: 9999;
   background: url(../images/hourglass.svg) center no-repeat #222222;
 }
+
+/* Personalización del modal */
+  .modal-dialog.modal-sm {
+    max-width: 550px;
+    width: 90%;
+  }
+
+  .modal-body p {
+    word-wrap: break-word;
+    word-break: break-all;
+  }

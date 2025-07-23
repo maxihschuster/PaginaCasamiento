@@ -65,7 +65,6 @@
 							<li><a >Home</a></li>
 							<li><a href="when-where.html">Lugar</a></li>
 							<li><a href="gallery.html">Fotos</a></li>
-							
 						</ul>
 					</nav>
 				</div>
@@ -89,14 +88,36 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2">
 						<div class="col-md-12 text-center heading-section">
 							<h2>Nos casamos! ! ! </h2>
-							<p><strong>Buenos Aires, Argentina</strong></p>
+							<!--<p><strong>Buenos Aires, Argentina</strong></p> -->
 						</div>
 					</div>
 				</div>
+
+
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="col-md-12 text-center heading-section">
+							<img src="images/giftbox.png"style="border-radius: 0; border: none;" alt="foto gift">
+							<p><strong>Regalame </strong></p> 
+							<p>en casop de querer regalarnos bla bla bla</p> 
+							<div class="col-md-12 text-center" style="margin-top: 20px;">
+								<button type="button" id="bank" class="btn btn-primary "data-toggle="modal" data-target="#bankModal">Datos bancarios</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
 			</div>
 		</div>
 
@@ -120,8 +141,10 @@
 			<div class="container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section">
-						<h2>Confirmación.</h2>
-						<p>Completa el formulario para confirmar tu asistencia. Gracias.
+						<h2>Confirmación de asistencia</h2>
+						<p>Completa el formulario para confirmar tu asistencia. Gracias. </p>
+						<p>*Completar antes del 5 de Septiembre </p>
+
 					</div>
 				</div>
 				<div class="row animate-box">
@@ -189,7 +212,7 @@
 
 
 							<div class="col-md-12 text-center" style="margin-top: 20px;">
-								<button type="submit" id="submitForm" class="btn btn-primary btn-block">Enviar</button>
+								<button type="submit" id="submitForm" class="btn btn-primary ">Enviar</button>
 							</div>
 
 						</form>
@@ -217,6 +240,36 @@
 
 	
 	<script src="js/form.js"></script> <!-- justo antes de cerrar </body> -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="bankModal" tabindex="-1" role="dialog" aria-labelledby="bankModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content" style="margin: 3em; margin-top: 12em;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span>&times;</span>
+        </button>
+        <h2 class="modal-title" id="bankModalLabel">Datos Bancarios</h2>
+      </div>
+      <div class="modal-body text-center">
+        <p><strong>Cuenta $</strong></p>
+        <p>Titular: LALALA LALALALA LALALALA</p>
+        <p>Alias: magaymaxi</p>
+        <p>cbu: 9817263897162381762389716238916736981762</p>
+        <p>Banco: Personal Pay</p>
+        <hr>
+        <p><strong>Cuenta U$D</strong></p>
+        <p>Titular: asda sdasd asd aa d</p>
+        <p>Alias: asd asd dolar</p>
+		<p>cbu: 9817263897162381762389716238916736981762</p>
+
+        <p>Banco: BBVA</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 	</body>
 </html>
