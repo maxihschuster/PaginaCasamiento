@@ -366,7 +366,6 @@ figure {
 #fh5co-header-section {
   padding: 0;
   position: relative;
-  left: 0;
   width: 100%;
   z-index: 1022;
   background: #F69D9D;
@@ -374,7 +373,7 @@ figure {
 
 .nav-header {
   position: relative;
-  float: left;
+  float: ce;
   width: 100%;
 }
 
@@ -1415,7 +1414,7 @@ select.form-control {
 }
 
 
-
+/* agregados %100    --->   */
 
 
 
@@ -1457,4 +1456,174 @@ select.form-control {
   }
 }
 
-  
+
+
+h2::before, h2::after, .fh5co-about-us .owl-carousel1 .owl-dots .active span, .read-more, .fh5co-news .owl-carousel2 .owl-dots .active span, .form-box h4::after, .form-box button {
+  background-image: -moz-linear-gradient(0deg, #F69D9D  0%, #eecfcf 100%);
+  background-image: -webkit-linear-gradient(0deg, #F69D9D 0%, #eecfcf 100%);
+  background-image: -ms-linear-gradient(0deg, #F69D9D 0%, #eecfcf 100%);
+}  
+
+
+.fh5co-about-us .owl-carousel1 {
+  margin-left: 40px;
+  margin-top: -80px;
+  width: 480px;
+}
+.fh5co-about-us .owl-carousel1 img {
+  border-radius: 10px;
+}
+.fh5co-about-us .owl-carousel1 .owl-nav {
+  display: none;
+}
+.fh5co-about-us .owl-carousel1 .owl-dots {
+  text-align: left;
+  margin-left: 30px;
+  margin-top: -60px;
+}
+.fh5co-about-us .owl-carousel1 .owl-dots span {
+  position: relative;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  display: block;
+  background: #ffffff;
+  margin: 0 5px;
+}
+.fh5co-about-us .owl-carousel1 .owl-dots .active {
+  box-shadow: none;
+}
+.fh5co-about-us .owl-carousel1 .owl-dots .active span {
+  box-shadow: none;
+  margin-bottom: -1px;
+}
+@media (max-width: 1199px) {
+  .fh5co-about-us .owl-carousel1 {
+    width: 350px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .fh5co-about-us .col-lg-4 {
+    margin-bottom: 100px;
+  }
+  .fh5co-about-us .owl-carousel1 {
+    margin-top: -70px;
+  }
+}
+@media (max-width: 450px) {
+  .fh5co-about-us .owl-carousel1 {
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    margin-top: -100px;
+  }
+}
+
+.fh5co-news .owl-nav {
+  display: none;
+}
+.fh5co-news .owl-carousel2 .owl-dots {
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+}
+.fh5co-news .owl-carousel2 .owl-dots button {
+  outline: none !important;
+}
+.fh5co-news .owl-carousel2 .owl-dots span {
+  position: relative;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  display: block;
+  background: #d4d4d4;
+  margin: 0 5px;
+}
+.fh5co-news .owl-carousel2 .owl-dots .active {
+  box-shadow: none;
+}
+.fh5co-news .owl-carousel2 .owl-dots .active span {
+  box-shadow: none;
+  margin-bottom: -1px;
+}
+.fh5co-news .owl-carousel2 .owl-item {
+  margin-bottom: 20px;
+}
+.fh5co-news .owl-carousel2 .owl-nav {
+  display: block !important;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+}
+.fh5co-news .owl-carousel2 .owl-prev,
+.fh5co-news .owl-carousel2 .owl-next {
+  font-size: 50px !important;
+  color: #666666;
+  position: absolute;
+  outline: none;
+  background: #f4f5f6 !important;
+  border-radius: 50%;
+  height: 68px;
+  width: 68px;
+}
+.fh5co-news .owl-carousel2 .owl-prev span,
+.fh5co-news .owl-carousel2 .owl-next span {
+  position: relative;
+  top: -7px;
+}
+.fh5co-news .owl-carousel2 .owl-prev:hover,
+.fh5co-news .owl-carousel2 .owl-next:hover {
+  color: #1270e4;
+  background: #ffffff !important;
+  box-shadow: 0px 11px 10px 0px rgba(0, 0, 0, 0.07);
+}
+@media (max-width: 767px) {
+  .fh5co-news .owl-carousel2 .owl-prev,
+  .fh5co-news .owl-carousel2 .owl-next {
+    display: none !important;
+  }
+}
+.fh5co-news .owl-carousel2 .owl-prev {
+  left: -100px;
+}
+.fh5co-news .owl-carousel2 .owl-next {
+  right: -100px;
+}
+
+
+
+.fh5co-news {
+  background: #fdfdfd;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+.fh5co-news .row {
+  padding: 0 80px;
+}
+@media (max-width: 767px) {
+  .fh5co-news .row {
+    padding: 0;
+  }
+}
+.fh5co-news h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.fh5co-news h5 {
+  font-family: "Larsseit-Medium";
+  color: #1e1f29;
+  font-size: 21px;
+}
+.fh5co-news p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-top: 20px;
+}
+.fh5co-news .card {
+  box-shadow: 0px 8px 29px 0px rgba(23, 23, 23, 0.03);
+}
+.fh5co-news .card-body {
+  padding: 30px 40px !important;
+}
+
