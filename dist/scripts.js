@@ -856,7 +856,7 @@ $(document).ready(function() {
 	};
 
 	// Set the date we're counting down to
-		var countDownDate = new Date("Nov 02, 2025 12:00:00").getTime();
+		var countDownDate = new Date("Oct 30, 2025 19:30:00").getTime();
 
 		// Update the count down every 1 second
 
