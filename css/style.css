@@ -6,6 +6,22 @@
   font-style: normal;
 
 }
+@font-face {
+  font-family: 'EduSABeginner';
+  src: url("../fonts/Edu_SA_Beginner/EduSABeginner-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'EduNSWACTHandPre';
+  src: url("../fonts/Edu_NSW_ACT_Hand_Pre/EduNSWACTHandPre-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 /* =======================================================
 *
@@ -60,8 +76,10 @@ p, ul, ol {
 
 h1, h2, h3, h4, h5, h6 {
   color: #5a5a5a;
-  font-family: "Montez", cursive;
-  /*font-family: "Milky Matcha";*/
+  /*  font-family: 'EduSABeginner', sans-serif;*/
+    font-family: 'EduNSWACTHandPre', sans-serif;
+  /*  font-family: 'Montez', cursive;*/
+
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -670,7 +688,7 @@ figure {
 #fh5co-countdown .countdown span {
   margin: 0 30px;
   display: inline-block;
-  font-family: "Montez", cursive;
+  font-family: 'EduSABeginner', sans-serif;
   /*font-family: "Milky Matcha";*/
 }
 
