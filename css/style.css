@@ -670,7 +670,8 @@ figure {
 #fh5co-countdown .countdown span {
   margin: 0 30px;
   display: inline-block;
-  font-family: "Milky Matcha", Cursive;
+  font-family: "Montez", cursive;
+  /*font-family: "Milky Matcha";*/
 }
 
 #fh5co-countdown .countdown small {
@@ -1092,7 +1093,6 @@ select.form-control {
   background: #F69D9D;
   color: #fff !important;
   place-items: center;
-
 }
 
 .btn:hover, .btn:active, .btn:focus {
