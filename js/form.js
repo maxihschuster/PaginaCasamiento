@@ -1,6 +1,17 @@
 ;(function () {
   const formulario = document.getElementById("miFormulario");
 
+  function mostrarMensaje(mensaje) {
+  const div = document.getElementById("mensaje-usuario");
+  div.textContent = mensaje;
+  div.style.display = "block";
+
+  setTimeout(() => {
+    div.style.display = "none";
+  }, 4000); // se oculta después de 4 segundos
+}
+
+
   formulario.addEventListener("submit", function (event) {
     event.preventDefault(); // Evita que se recargue la página
     console.log("Enviando...");
@@ -21,7 +32,10 @@
     // Validación de campos vacíos
     for (let key in campos) {
       if (campos[key] === "" || campos[key] === "-") {
-        alert("Por favor, completá todos los campos.");
+        // alert("Por favor, completá todos los campos.");
+        mostrarMensaje("Por favor, completá todos los campos.");
+
+
         return;
       }
     }

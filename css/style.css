@@ -1686,5 +1686,40 @@ h2::before, h2::after, .fh5co-about-us .owl-carousel1 .owl-dots .active span, .r
   width: 100%;
 }
 
+.form-font{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+/* Mensaje flotante de éxito */
+.mensaje-flotante {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #F69D9D;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  font-weight: bold;
+  animation: fadeOut 4s forwards;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Animación para desvanecer */
+@keyframes fadeOut {
+  0%   { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
+
+
 
 
