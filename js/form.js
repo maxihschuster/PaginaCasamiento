@@ -32,9 +32,7 @@
     // Validación de campos vacíos
     for (let key in campos) {
       if (campos[key] === "" || campos[key] === "-") {
-        // alert("Por favor, completá todos los campos.");
-        mostrarMensaje("Por favor, completá todos los campos.");
-
+        alert("Por favor, completá todos los campos.");
 
         return;
       }
