@@ -6830,13 +6830,18 @@ button.close {
 }
 
 .modal-header {
-  padding: 15px;
+  padding: 10px;
   border-bottom: 1px solid #e5e5e5;
   min-height: 16.42857px;
+
 }
 
 .modal-header .close {
   margin-top: -2px;
+
+  font-size: 28px;   /* agranda la X */
+  color: #333;       /* más oscuro */
+  opacity: 1;        /* evita que Bootstrap lo haga gris translúcido */
 }
 
 .modal-title {
@@ -6846,11 +6851,11 @@ button.close {
 
 .modal-body {
   position: relative;
-  padding: 15px;
+  padding: 10px;
 }
 
 .modal-footer {
-  padding: 15px;
+  padding: 10px;
   text-align: right;
   border-top: 1px solid #e5e5e5;
 }
