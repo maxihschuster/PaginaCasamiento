@@ -1698,7 +1698,7 @@ h2::before, h2::after, .fh5co-about-us .owl-carousel1 .owl-dots .active span, .r
 /* Mensaje flotante de éxito */
 .mensaje-flotante {
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #F69D9D;
@@ -1722,4 +1722,20 @@ h2::before, h2::after, .fh5co-about-us .owl-carousel1 .owl-dots .active span, .r
 
 
 
+.spinner {
+  border: 2px solid #f3f3f3; /* color base */
+  border-top: 2px solid white; /* color animado */
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 8px;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
