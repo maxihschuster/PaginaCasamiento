@@ -1,3 +1,4 @@
+/*
 ;(function () {
   const formulario = document.getElementById("miFormulario");
   const btn = document.getElementById("submitForm");
@@ -66,8 +67,10 @@
   });
 })();
 
+*/
 
-/*;(function () {
+
+;(function () {
   const formulario = document.getElementById("miFormulario");
 
   function mostrarMensaje(mensaje, esError = false) {
@@ -123,4 +126,3 @@
 })();
 
 
-*/
